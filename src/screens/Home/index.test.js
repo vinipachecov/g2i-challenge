@@ -30,9 +30,9 @@ describe('<Home />', () => {
         {
           exact: false,
         },
-      );      
+      );
       expect(data).toBeInTheDocument();
-      expect()
+      expect();
     }
     console.log(debug());
   });
