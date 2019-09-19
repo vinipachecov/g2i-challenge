@@ -6,7 +6,7 @@ import withQuestions from '../../containers/Question';
 import { paths } from '../../helpers/constants';
 import withQuiz from '../../containers/Quiz';
 
-function Home(props) {
+export function Home(props) {
   const { history, scoreList } = props;
   useEffect(() => {
     props.fetchQuestions();

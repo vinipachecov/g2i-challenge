@@ -4,7 +4,7 @@ import QuestionService from '../services/question';
 
 const { questionTypes } = QuestionDuck;
 
-function* fetchQuestionsSaga(action) {
+export function* fetchQuestionsSaga(action) {
   try {
     yield put(QuestionDuck.loadingQuestions(true));
     const {

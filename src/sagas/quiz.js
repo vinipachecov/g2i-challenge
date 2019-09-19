@@ -4,7 +4,7 @@ import * as QuizDuck from '../store/ducks/quiz';
 
 const { quizTypes } = QuizDuck;
 
-function* getScoreListSaga() {
+export function* getScoreListSaga() {
   const scoreList = localStorage.getItem(resultsKey);
   if (scoreList) {
     yield put(QuizDuck.sendScoreList(JSON.parse(scoreList)));
