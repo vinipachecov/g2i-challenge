@@ -3,3 +3,5 @@ export const paths = {
   QUIZ: '/quiz',
   RESULTS: '/results',
 };
+
+export const resultsKey = '@RESULT:KEY';

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Switch, Route, withRouter } from 'react-router-dom';
-import Home from '../screens/home';
-import Quiz from '../screens/quiz';
-import Results from '../screens/results';
+import { Switch, Route } from 'react-router-dom';
+import Home from '../screens/Home';
+import Quiz from '../screens/Quiz';
+import Results from '../screens/Results';
 import { paths } from '../helpers/constants';
 
 export function Routes() {

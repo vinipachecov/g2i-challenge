@@ -18,7 +18,7 @@
     "jest": true
   },
   "rules": {
-    "no-useless-return": false,
+    "no-useless-return": "off",
     "max-len": [
       2,
       80,
@@ -43,6 +43,7 @@
     "jsx-a11y/no-static-element-interactions": 1,
     "linebreak-style": 0,
     "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error"
+    "react/jsx-uses-vars": "error",
+    "react/jsx-props-no-spreading": "off"
   }
 }
