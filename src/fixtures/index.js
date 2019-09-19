@@ -105,7 +105,7 @@ export const mockResults = {
           type: 'boolean',
           difficulty: 'hard',
           question:
-            'The two largest ethnic groups of Belgium are Flemish and Walloon. ',
+            'The two largest ethnic groups of Belgium are Flemish and Walloon.',
           correct_answer: 'True',
           incorrect_answers: ['False'],
         },
@@ -373,4 +373,14 @@ export const mockResults = {
     ],
     id: 2,
   },
+};
+
+export const questionMock = {
+  category: 'Entertainment: Video Games',
+  type: 'boolean',
+  difficulty: 'hard',
+  question:
+    'In &quot;Metal Gear Solid 2&quot;, you will see through the eyes of Psycho Mantis if you go first person during his boss fight.',
+  correct_answer: 'True',
+  incorrect_answers: ['False'],
 };

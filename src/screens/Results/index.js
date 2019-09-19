@@ -6,7 +6,7 @@ import withQuestion from '../../containers/Question';
 import withQuiz from '../../containers/Quiz';
 import { paths, resultsKey } from '../../helpers/constants';
 
-const Results = (props) => {
+export const Results = (props) => {
   const {
     quizAttemptAnswers, score, history, resetQuiz,
   } = props;

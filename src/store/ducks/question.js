@@ -1,30 +1,28 @@
 export const questionTypes = {
   FETCH_QUESTIONS: 'FETCH_QUESTIONS',
-  LOADING_QUESTIONS: "LOADING_QUESTIONS",
-  RECEIVING_QUESTIONS: "RECEIVING_QUESTIONS",    
+  LOADING_QUESTIONS: 'LOADING_QUESTIONS',
+  RECEIVING_QUESTIONS: 'RECEIVING_QUESTIONS',
 };
 
 const initialState = {
-  questionList: [],  
+  questionList: [],
   loadingQuestions: false,
-  score: 0
+  score: 0,
 };
 
 export const fetchQuestions = () => ({
-  type: questionTypes.FETCH_QUESTIONS,  
+  type: questionTypes.FETCH_QUESTIONS,
 });
 
 export const loadingQuestions = (payload) => ({
   type: questionTypes.LOADING_QUESTIONS,
-  payload
-})
+  payload,
+});
 
 export const receivingQuestions = (questionList) => ({
   type: questionTypes.RECEIVING_QUESTIONS,
-  payload: questionList
-})
-
-
+  payload: questionList,
+});
 
 export default (state = initialState, action) => {
   switch (action.type) {
@@ -33,8 +31,8 @@ export default (state = initialState, action) => {
     case questionTypes.RECEIVING_QUESTIONS:
       return {
         ...state,
-        questionList: action.payload
-      }
+        questionList: action.payload,
+      };
     default:
       return state;
   }
